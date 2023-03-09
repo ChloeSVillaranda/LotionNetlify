@@ -1,0 +1,196 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-leftside {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid black;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.menu-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header h3 {
+  text-align: center;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 0;
+}
+
+/* Leftside */
+
+.app-layout {
+  display: flex;
+}
+
+.leftside {
+  width: 30%;
+  display: flex;
+  border-right: 1px solid black;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.leftside.hide {
+  display: none;
+}
+
+.app-leftside-note.active,
+.app-leftside-note.active small {
+  background: rgb(75, 3, 75);
+  color: white;
+}
+
+.app-leftside-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px; 
+  border-bottom: 1px solid black;
+}
+
+.app-leftside-body {
+  overflow-y: auto;
+  max-height: calc(100vh - 130px);
+}
+
+.app-leftside-header button {
+  margin-left: 10px;
+}
+
+.app-leftside-header h2 {
+  margin: 0;
+}
+
+.app-leftside-note {
+  padding: 25px;
+  cursor: pointer;
+}
+
+.app-sidebar-note button {
+  color: crimson;
+}
+
+.leftside-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-leftside-note p {
+  margin: 10px 0;
+}
+
+.app-leftside-note small {
+  display: block;
+  color: black;
+}
+
+.app-leftside-note:hover {
+  background: #ddd;
+}
+
+/* Rightside */
+.rightside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* .rightside.hide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+.rightside-note-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  height: calc(50vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.rightside-note-body {
+  height: 90vh;
+}
+
+.container {
+  height: 90%;
+}
+
+/* ViewNote() */
+.viewNote-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* EditNote() */
+.editnote-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editnote-title {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.editnote-title {
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#titleofnote {
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+
