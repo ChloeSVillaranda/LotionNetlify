@@ -34,7 +34,7 @@ function EditNote() {
     activeNote.title = title;
     activeNote.body = body;
     activeNote.date = date;
-    navigate(`/notes/${noteId}`);
+    navigate(`/${noteId}`);
   }
 
   return (

@@ -25,7 +25,7 @@ function Layout() {
     setNotes([newNote, ...notes]);
     setActiveNote(newNote);
     setNextId(nextId + 1);
-    navigate(`/notes/${newNote.id}/edit`);
+    navigate(`/${newNote.id}/edit`);
   }, [nextId, notes, navigate]);
 
   useEffect(() => {
@@ -49,10 +49,10 @@ function Layout() {
         const updatedNotes = notes.filter(({ id }) => id !== noteId);
         setNotes(updatedNotes);
         if (updatedNotes.length === 0) {
-          navigate("/notes");
+          navigate("/");
         } else {
           setActiveNote(nextActiveNote);
-          navigate(`/notes/${nextActiveNote.id}`);
+          navigate(`/${nextActiveNote.id}`);
         }
       }
     },

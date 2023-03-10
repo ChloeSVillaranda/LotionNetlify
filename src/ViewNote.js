@@ -13,7 +13,7 @@ function ViewNote () {
     console.log(activeNote);
 
     const edit = () => {
-        navigate(`/notes/${activeNote.id}/edit`);
+        navigate(`/${activeNote.id}/edit`);
     }
 
     const createMarkup = () => {

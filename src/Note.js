@@ -21,7 +21,7 @@ function Note({ notes, activeNote, setActiveNote }) {
   return (
     <div className="app-leftside-notes">
       {notes.map(({ id, title, body, lastModified }, i) => (
-        <Link key={id} to={`/notes/${id}`}>
+        <Link key={id} to={`/${id}`}>
           <div
             className={`app-leftside-note ${id === activeNote.id && "active"}`}
             onClick={() => setActiveNote({ id, title, body })}
