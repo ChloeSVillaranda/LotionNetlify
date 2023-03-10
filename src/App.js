@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/notes" element={<Layout />} >
+        <Route exact path="/" element={<Layout />} >
           <Route path=":noteId" element={<ViewNote />} />
           <Route path=":noteId/edit" element={<EditNote />} />
         </Route>
